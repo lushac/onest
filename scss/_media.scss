@@ -1,0 +1,182 @@
+@media screen and (max-width: 800px) {
+  #contact {
+    .contact-inner {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #about {
+    .about-inner {
+      grid-template-columns: 1fr;
+
+      .title {
+        h2 {
+          padding-top: 1rem;
+          font-size: 1.75rem;
+        }
+      }
+
+      .desc {
+        padding-top: 1rem;
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .about-me {
+          padding: 1rem 0;
+        }
+      }
+
+      .vector {
+        display: none;
+      }
+    }
+  }
+}
+
+// Smartphone
+@media screen and (max-width: 548px) {
+  #main-nav {
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  #home {
+    padding: 1rem 1rem;
+
+    .hero-inner {
+      flex-direction: column;
+
+      .item-left {
+        h1 {
+          font-size: 1.75rem;
+        }
+
+        p {
+          font-size: 1.25rem;
+        }
+      }
+      .item-right {
+        order: -1;
+        max-width: 70%;
+      }
+    }
+  }
+
+  #about {
+    .about-inner {
+      grid-template-columns: 1fr;
+
+      .title {
+        h2 {
+          padding-top: 1rem;
+          font-size: 1.75rem;
+        }
+      }
+
+      .desc {
+        padding-top: 1rem;
+
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .about-me {
+          padding: 1rem 0;
+        }
+      }
+
+      .vector {
+        order: 1;
+        display: block;
+      }
+    }
+  }
+
+  #contact {
+    .contact-inner {
+      grid-template-columns: 1fr;
+
+      .contact-form {
+        .contact-title {
+          h2 {
+            padding-top: 1rem;
+            font-size: 1.75rem;
+          }
+        }
+        .form-group {
+          grid-template-areas:
+            "email"
+            "name"
+            "message";
+          margin: 1rem 0;
+        }
+      }
+
+      .info {
+        padding-top: 0;
+        &-title {
+          h2 {
+            padding-top: 1rem;
+            font-size: 1.25rem;
+          }
+
+          p {
+            font-size: 1.1rem;
+          }
+        }
+        .social {
+          li {
+            padding: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  #main-footer {
+    .footer-inner {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 1rem;
+
+      .goUp {
+        display: none;
+      }
+    }
+  }
+}
+
+// Landscape
+@media screen and (max-height: 560px) {
+  #home {
+    padding-bottom: 2rem;
+  }
+
+  #about {
+    .about-inner {
+      grid-template-columns: 1fr;
+
+      .vector {
+        display: none;
+      }
+    }
+  }
+
+  #contact {
+    .contact-inner {
+      .info {
+        padding-top: 0;
+
+        .social {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description"”" content="Lorem ipsum dolor sit amet consectetur
+    adipisicing elit. Aspernatur, asperiores.">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="apple-touch-icon" href="img/icon-192.png" />
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
+    <meta name="theme-color" content="#fbfbff" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>ONE - digital agency</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav id="main-nav" class="bg-light">
+      <section class="navbar container">
+        <img src="img/logo.png" alt="One" class="logo" />
+        <ul>
+          <li><a href="#home" aria-label="Home">Home</a></li>
+          <li><a href="#about" aria-label="About">About</a></li>
+          <li><a href="#contact" aria-label="Contact">Contact</a></li>
+        </ul>
+      </section>
+    </nav>
+    <!-- Header -->
+    <header id="home" class="bg-medium py-2">
+      <div class="hero-inner container">
+        <div class="item-left">
+          <h1 class="home-title">
+            Lorem ipsum dolor, sit amet consectetur
+            <span class="typewriter"></span>
+          </h1>
+          <p class="lead">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+            sint ad velit nisi at dolores!
+          </p>
+          <a href="#contact" aria-label="Contact">
+            <button class="btn">Let's work together</button>
+          </a>
+        </div>
+        <div class="item-right">
+          <img src="img/banner.png" alt="banner" class="img-right" />
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <!-- About -->
+      <section id="about" class="bg-light py-3">
+        <section class="about-inner container">
+          <div class="title">
+            <h1 class="section-title">About us</h1>
+          </div>
+          <div class="desc">
+            <h2 class="subtitle">Who are we?</h2>
+            <p class="sm-lead py-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+              harum minus, recusandae placeat deleniti dolorem, animi nulla
+              commodi incidunt blanditiis repudiandae numquam rem, ipsa quidem.
+              Modi vitae iure recusandae quibusdam obcaecati doloribus
+              doloremque magnam. Ipsum amet eligendi, nemo hic harum laboriosam
+              quod tempora corrupti officiis fugiat odio nostrum? Quam
+              asperiores, ad vel, voluptate sed dolorum repellat odit quis
+              magni, fuga commodi exercitationem! Consequatur tenetur asperiores
+              recusandae dicta maxime rerum expedita?
+            </p>
+          </div>
+          <div class="vector">
+            <img src="img/about-left.png" alt="" />
+          </div>
+        </section>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="bg-dark py-3">
+        <div class="contact-inner container">
+          <div class="contact-form">
+            <div>
+              <h1 class="section-title">Contact us</h1>
+            </div>
+            <form
+              method="post"
+              name="contact"
+              class="form-group py-1"
+              action="mail.php"
+            >
+              <div class="email-group">
+                <label for="email">Email</label>
+                <input
+                  required
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="email-input"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="name-group">
+                <label for="name">Name</label>
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  id="name"
+                  class="name-input"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="message-group">
+                <label for="message">Message</label>
+                <textarea
+                  required
+                  name="message"
+                  id="message"
+                  class="message-input"
+                  placeholder="Enter a message"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+          </div>
+          <div class="info">
+            <div class="info-title">
+              <h2 class="subtitle">Let's stay in touch!</h2>
+            </div>
+            <p class="smLead">You can reach us using:</p>
+            <ul class="social">
+              <li>
+                <a href="mailto:mail@mail.com" aria-label="Mail">
+                  <i data-feather="inbox"></i>
+                  <span>
+                    mail@mail.com
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="http://instagram.com/" aria-label="Instagram">
+                  <i data-feather="instagram"></i>
+                  <span>
+                    Lorem ipsum
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="http://github.com/" aria-label="Github">
+                  <i data-feather="github"></i>
+                  <span>
+                    Lorem ipsum
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-light">
+      <div class="footer-inner container">
+        <p>
+          Crafted with <i class="fas fa-heart"></i> by
+          <a href="https://splawr.com"><strong>Splawr</strong></a
+          >!
+        </p>
+        <div>
+          <img src="img/logo.png" alt="lzpr" class="logo" />
+        </div>
+        <div class="goUp">
+          <a href="#home" aria-label="Home">
+            <i data-feather="arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+    feather.replace();
+  </script>
+  <script src="js/main.js"></script>
+  <!-- Service Worker -->
+  <!-- <script src="js/sw-register.js"></script> -->
+</html>

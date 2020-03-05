@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import "config";
+@import "utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+// Logo
+.logo {
+  color: $dark-color;
+  width: 70px;
+  height: 70px;
+}
+
+// Nav
+#main-nav {
+  position: sticky;
+  top: 0;
+  box-shadow: none;
+  transition: box-shadow 0.5s;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+    }
+
+    li {
+      padding: 1.5rem 1.25rem;
+    }
+
+    a {
+      color: $dark-color;
+      border-bottom: 3px solid transparent;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s;
+
+      &:hover {
+        border-color: $medium-color;
+      }
+    }
+  }
+}
+
+// Header
+#home {
+  height: auto;
+
+  .hero-inner {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .item-left {
+      .home-title {
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+    }
+
+    .item-right {
+      .img-right {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+// Section - About
+#about {
+  height: auto;
+
+  .about-inner {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    .title {
+      order: 1;
+    }
+
+    .desc {
+      order: 2;
+    }
+
+    .vector {
+      order: 3;
+    }
+  }
+}
+
+// Section - contact
+#contact {
+  height: auto;
+
+  .contact-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .contact-form {
+      .form-group {
+        display: grid;
+        grid-template-areas:
+          "email name"
+          "message message";
+        grid-gap: 1.2rem;
+        padding-right: 2rem;
+
+        label {
+          display: block;
+        }
+
+        .name-group {
+          grid-area: name;
+
+          .name-input {
+            padding: 0.5rem 1rem;
+            font-size: inherit;
+            width: 100%;
+          }
+        }
+        .email-group {
+          grid-area: email;
+
+          .email-input {
+            padding: 0.5rem 1rem;
+            font-size: inherit;
+            width: 100%;
+          }
+        }
+        .message-group {
+          grid-area: message;
+
+          .message-input {
+            font-family: inherit;
+            font-size: inherit;
+            padding: 0.5rem 1rem;
+            height: 5rem;
+            resize: none;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .info {
+      .social {
+        li {
+          padding: 0.25rem;
+
+          a {
+            color: $light-color;
+            font-size: 1rem;
+            transition: font-size 0.5s;
+
+            &:hover {
+              font-size: 1.1rem;
+            }
+          }
+
+          i {
+            padding-right: 0.25rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+#mail {
+  background: $medium-color;
+  color: $light-color;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+// Footer
+#main-footer {
+  height: auto;
+
+  a {
+    color: $dark-color;
+  }
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+// Media query
+@import "media";

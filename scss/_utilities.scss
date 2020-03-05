@@ -1,0 +1,72 @@
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.btn {
+  background: none;
+  vertical-align: middle;
+  color: $light-color;
+  padding: 10px;
+  border: 2px solid $light-color;
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    font-size: 1.55rem;
+  }
+}
+
+.bg {
+  &-light {
+    color: $dark-color;
+    background: $light-color;
+  }
+
+  &-medium {
+    color: $light-color;
+    background: $medium-color;
+  }
+
+  &-dark {
+    color: $light-color;
+    background: $dark-color;
+  }
+}
+
+.py {
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+}
+
+.section-title {
+  font-size: 2.5rem;
+  display: inline-block;
+  border-bottom: 3px solid $medium-color;
+  padding-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.sm-Lead {
+  font-size: 1.1rem;
+}

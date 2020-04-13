@@ -53,8 +53,17 @@
 .section-title {
   font-size: 2.5rem;
   display: inline-block;
-  border-bottom: 3px solid $medium-color;
   padding-bottom: 0.5rem;
+
+  &-blue {
+    @extend .section-title;
+    border-bottom: 3px solid $medium-color;
+  }
+
+  &-light {
+    @extend .section-title;
+    border-bottom: 3px solid $light-color;
+  }
 }
 
 .subtitle {

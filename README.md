@@ -1,10 +1,10 @@
-# One
+# Onest
 
 Free theme created by Splawr, which can be used by everyone. Made especially for start-up/digital agency/freelancers.
 
 ### Preview
 
-##### [Online](https://splawr.com/files/preview/one)
+##### [Online](https://splawr.com/files/preview/onest)
 
 ##### Local:
 

@@ -29,23 +29,29 @@ img {
   width: 100%;
 }
 
-// Logo
-.logo {
-  color: $dark-color;
-  width: 70px;
-  height: 70px;
-}
-
 // Nav
 #main-nav {
   position: sticky;
   top: 0;
   box-shadow: none;
   transition: box-shadow 0.5s;
+  padding: 0.5rem;
 
   .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    // Logo
+    .logo {
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: 55%;
+        height: auto;
+      }
+    }
 
     ul {
       display: flex;
@@ -53,16 +59,17 @@ img {
 
     li {
       padding: 1.5rem 1.25rem;
-    }
 
-    a {
-      color: $dark-color;
-      border-bottom: 3px solid transparent;
-      padding-bottom: 0.5rem;
-      transition: border-color 0.5s;
+      a {
+        font-size: 1.2rem;
+        color: $dark-color;
+        border-bottom: 3px solid transparent;
+        padding-bottom: 0.5rem;
+        transition: border-color 0.5s;
 
-      &:hover {
-        border-color: $medium-color;
+        &:hover {
+          border-color: $medium-color;
+        }
       }
     }
   }
@@ -208,6 +215,7 @@ img {
 // Footer
 #main-footer {
   height: auto;
+  padding: 1rem 0;
 
   a {
     color: $dark-color;

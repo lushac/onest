@@ -29,6 +29,17 @@ img {
   width: 100%;
 }
 
+// Logo
+.logo {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 55%;
+    height: auto;
+  }
+}
+
 // Nav
 #main-nav {
   position: sticky;
@@ -41,17 +52,6 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    // Logo
-    .logo {
-      display: flex;
-      justify-content: center;
-
-      img {
-        width: 55%;
-        height: auto;
-      }
-    }
 
     ul {
       display: flex;

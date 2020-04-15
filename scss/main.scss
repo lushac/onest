@@ -179,22 +179,41 @@ img {
     }
 
     .info {
-      .social {
-        li {
-          padding: 0.25rem;
+      a {
+        color: $light-color;
+      }
 
-          a {
-            color: $light-color;
-            font-size: 1rem;
-            transition: font-size 0.5s;
+      .meetUs {
+        .middle {
+          vertical-align: middle;
+        }
 
-            &:hover {
-              font-size: 1.1rem;
-            }
-          }
+        &-inner {
+          padding: 0.5rem 0;
+          display: flex;
+          height: auto;
+          align-items: center;
+          font-size: 1.1rem;
 
-          i {
+          h2 {
+            display: inline;
             padding-right: 0.25rem;
+          }
+        }
+      }
+
+      .socialMedia {
+        font-size: 1.5rem;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: start;
+
+        li {
+          padding-right: 2rem;
+
+          .feather-2x {
+            width: 2rem;
+            height: 2rem;
           }
         }
       }

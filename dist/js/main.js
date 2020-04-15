@@ -9,12 +9,12 @@ const navbarTransition = () => {
 
 class TypeWriter {
   constructor() {
-    this.textData = ["adipisicing."];
+    this.textData = ["digital agency!"];
     this.currentText = "";
     this.word = "";
     this.count = 0;
     this.index = 0;
-    this.speed = 300;
+    this.speed = 500;
     this.isDeleting = false;
     this.type();
   }

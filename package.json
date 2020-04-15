@@ -1,5 +1,5 @@
 {
-  "name": "lzpr",
+  "name": "Onest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lushac/lzpr.git"
+    "url": "git+https://github.com/lushac/onest.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lushac/lzpr/issues"
+    "url": "https://github.com/lushac/onest/issues"
   },
-  "homepage": "https://github.com/lushac/lzpr#readme",
+  "homepage": "https://github.com/lushac/onest#readme",
   "dependencies": {
     "node-sass": "^4.12.0"
   }

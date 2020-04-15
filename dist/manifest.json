@@ -1,7 +1,7 @@
 {
-  "short_name": "lzpr",
-  "name": "lzpr - web developer",
-  "description": "With a dream to make a web awesome and beautiful place I build affordable websites and web applications for everyone!",
+  "short_name": "Onest",
+  "name": "Onest - digital agency",
+  "description": "Onest - we make browsing web way better!",
   "icons": [
     {
       "src": "img/icon-192.png",
@@ -15,8 +15,8 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#fbfbff",
+  "background_color": "#fffafb",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#fbfbff"
+  "theme_color": "#fffafb"
 }

@@ -6,17 +6,6 @@
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ -r"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lushac/onest.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/lushac/onest/issues"
-  },
-  "homepage": "https://github.com/lushac/onest#readme",
   "dependencies": {
     "node-sass": "^4.12.0"
   }
